@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Phlex Technologies | Your Local IT Partner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#ffdbce",
+            "on-secondary-fixed-variant": "#3a485b",
+            "surface-bright": "#faf8ff",
+            "surface-variant": "#dae2fd",
+            "primary-fixed": "#d9e2ff",
+            "inverse-primary": "#b0c6ff",
+            "surface-dim": "#d2d9f4",
+            "background": "#faf8ff",
+            "on-primary": "#ffffff",
+            "primary": "#00357f",
+            "primary-container": "#004aad",
+            "surface-container-highest": "#dae2fd",
+            "on-primary-fixed": "#001945",
+            "surface": "#faf8ff",
+            "on-primary-container": "#a9c1ff",
+            "on-tertiary-fixed": "#370e00",
+            "on-secondary-fixed": "#0d1c2e",
+            "on-tertiary-fixed-variant": "#7f2b00",
+            "secondary": "#515f74",
+            "on-error-container": "#93000a",
+            "surface-container-low": "#f2f3ff",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#d5e3fc",
+            "surface-container-high": "#e2e7ff",
+            "secondary-fixed-dim": "#b9c7df",
+            "tertiary-container": "#8e3100",
+            "outline": "#737784",
+            "error-container": "#ffdad6",
+            "surface-tint": "#215abd",
+            "on-surface": "#131b2e",
+            "inverse-surface": "#283044",
+            "on-tertiary-container": "#ffaf90",
+            "on-secondary-container": "#57657a",
+            "inverse-on-surface": "#eef0ff",
+            "primary-fixed-dim": "#b0c6ff",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "surface-container": "#eaedff",
+            "outline-variant": "#c3c6d5",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#d5e3fc",
+            "on-background": "#131b2e",
+            "tertiary-fixed-dim": "#ffb599",
+            "tertiary": "#682200",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#00429b",
+            "on-surface-variant": "#434653"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .glass-nav {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #faf8ff;
+      color: #131b2e;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .abstract-pattern {
+      background-color: #00357f;
+      background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    .glow-effect {
+      box-shadow: 0 0 50px -10px rgba(0, 53, 127, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background">
+  <header class="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-xl shadow-xl shadow-blue-900/5 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-8 py-4">
+      <a class="text-xl font-bold tracking-tighter text-blue-900" href="#top">Phlex Technologies</a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="tracking-tight font-extrabold text-sm uppercase text-blue-700 border-b-2 border-blue-600 transition-colors duration-300" href="#services">Services</a>
+        <a class="tracking-tight font-bold text-sm uppercase text-slate-600 hover:text-blue-600 transition-colors duration-300" href="#about">About</a>
+        <a class="tracking-tight font-bold text-sm uppercase text-slate-600 hover:text-blue-600 transition-colors duration-300" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a class="material-symbols-outlined text-slate-600 hover:text-blue-600 transition-colors" href="#contact" aria-label="Contact support">support_agent</a>
+        <a class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-bold text-sm hover:scale-95 transition-all duration-200" href="#contact">Get Support</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24" id="top">
+    <section class="relative overflow-hidden px-8 py-20 md:py-32 bg-surface">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div class="z-10">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-primary-container/10 text-primary font-bold text-xs uppercase tracking-widest mb-6">Reliable IT Support</span>
+          <h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+            Dedicated IT Support for <span class="text-primary">Local</span> Businesses
+          </h1>
+          <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">I help simplify your business IT by providing reliable technical expertise without the corporate red tape. Get personalized solutions tailored specifically for your local business.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a class="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-md font-bold text-lg transition-all shadow-lg shadow-primary/20 text-center" href="#contact">
+              Book a Consultation
+            </a>
+            <a class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-md font-bold text-lg hover:bg-surface-container-high transition-all text-center" href="#services">
+              How I Help
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute inset-0 bg-primary-container/5 rounded-3xl -rotate-3 scale-105"></div>
+          <div class="relative rounded-xl shadow-2xl w-full aspect-[4/3] z-10 overflow-hidden bg-primary abstract-pattern flex items-center justify-center glow-effect border border-primary/20">
+            <div class="absolute inset-0 opacity-20">
+              <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"></path>
+                  </pattern>
+                </defs>
+                <rect fill="url(#grid)" height="100%" width="100%"></rect>
+              </svg>
+            </div>
+            <div class="relative z-10 flex flex-col items-center gap-6">
+              <div class="relative">
+                <div class="absolute -inset-8 bg-blue-400/20 blur-2xl rounded-full animate-pulse"></div>
+                <span class="material-symbols-outlined text-[120px] text-white opacity-90">hub</span>
+              </div>
+              <div class="flex gap-4">
+                <span class="material-symbols-outlined text-blue-300 text-3xl animate-bounce" style="animation-delay: 0.1s">terminal</span>
+                <span class="material-symbols-outlined text-white text-3xl animate-bounce" style="animation-delay: 0.3s">security</span>
+                <span class="material-symbols-outlined text-blue-200 text-3xl animate-bounce" style="animation-delay: 0.5s">settings_ethernet</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl z-20 hidden lg:block border border-outline-variant/10">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">person_check</span>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-primary">Direct Access</div>
+                <div class="text-xs text-on-surface-variant font-bold uppercase tracking-tighter">Skip the call center</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-container/5 to-transparent pointer-events-none"></div>
+    </section>
+
+    <section class="py-24 px-8 bg-surface-container-low" id="services">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div class="max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-on-surface">Practical IT Services</h2>
+            <p class="text-on-surface-variant text-lg">Straightforward, effective, and professional solutions to keep your business running smoothly.</p>
+          </div>
+          <a class="text-primary font-bold hover:underline underline-offset-8 transition-all" href="#contact">View All Services</a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="group p-8 bg-surface-container-lowest rounded-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-outline-variant/15">
+            <div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">desktop_windows</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Remote IT Support</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Fast, reliable help whenever you encounter a glitch. I can securely access your system to solve issues in minutes, not hours.</p>
+            <div class="mt-auto">
+              <span class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Get Help <span class="material-symbols-outlined">arrow_forward</span></span>
+            </div>
+          </div>
+          <div class="group p-8 bg-surface-container-lowest rounded-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-outline-variant/15">
+            <div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">mail</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Professional Email Setup</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Look professional with your own domain. I'll handle the migration and setup of secure, reliable business email for your whole team.</p>
+            <div class="mt-auto">
+              <span class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Get Started <span class="material-symbols-outlined">arrow_forward</span></span>
+            </div>
+          </div>
+          <div class="group p-8 bg-surface-container-lowest rounded-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full border border-outline-variant/15">
+            <div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl">code</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Custom Software Solutions</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Need something specific? I build simple, efficient tools and scripts to automate your repetitive tasks and save you hours every week.</p>
+            <div class="mt-auto">
+              <span class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Let's Build <span class="material-symbols-outlined">arrow_forward</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-8 bg-surface" id="about">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-extrabold tracking-tight mb-4">The Personal Touch Matters</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">I'm not just another IT vendor; I'm a dedicated partner who understands your business goals.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="md:col-span-2 bg-primary p-10 rounded-xl text-on-primary flex flex-col justify-between overflow-hidden relative group">
+            <div class="z-10">
+              <span class="material-symbols-outlined text-5xl mb-6 opacity-80">account_tree</span>
+              <h3 class="text-3xl font-bold mb-4">Dedicated Expert</h3>
+              <p class="text-on-primary-container opacity-90 leading-relaxed">When you call, you speak directly to me. No ticketing systems or junior technicians, just expert solutions from someone who knows your setup inside out.</p>
+            </div>
+            <div class="absolute -bottom-10 -right-10 opacity-10 group-hover:scale-110 transition-transform duration-500">
+              <span class="material-symbols-outlined text-[12rem]">handshake</span>
+            </div>
+          </div>
+          <div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-center">
+            <div class="text-primary mb-4">
+              <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">timer</span>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Fast Response</h4>
+            <p class="text-on-surface-variant text-sm">Priority support for my clients means your issues are resolved before they become problems.</p>
+          </div>
+          <div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-center">
+            <div class="text-primary mb-4">
+              <span class="material-symbols-outlined text-4xl">security</span>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Honest Advice</h4>
+            <p class="text-on-surface-variant text-sm">Straight talk about what you need and what you don't. I focus on value, not upsells.</p>
+          </div>
+          <div class="md:col-span-4 bg-surface-container-low p-10 rounded-xl flex flex-col md:flex-row items-center gap-12 border border-outline-variant/15">
+            <div class="md:w-1/2">
+              <h3 class="text-3xl font-bold mb-4">Simple, Transparent Pricing</h3>
+              <p class="text-on-surface-variant mb-6">Quality IT help shouldn't be a mystery. I offer clear hourly rates and project-based quotes so you always know exactly what you're paying for.</p>
+              <a class="text-primary font-bold underline underline-offset-4" href="#contact">See Service Rates</a>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+              <div class="bg-surface p-4 rounded-lg text-center border border-outline-variant/10">
+                <div class="text-3xl font-black text-primary mb-1">1-on-1</div>
+                <div class="text-xs text-on-surface-variant uppercase font-bold tracking-wider">Direct Partnership</div>
+              </div>
+              <div class="bg-surface p-4 rounded-lg text-center border border-outline-variant/10">
+                <div class="text-3xl font-black text-primary mb-1">100%</div>
+                <div class="text-xs text-on-surface-variant uppercase font-bold tracking-wider">Commitment to You</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-8 bg-surface-container-low" id="contact">
+      <div class="max-w-7xl mx-auto bg-surface-container-lowest rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+        <div class="lg:w-1/2 p-12 lg:p-20 bg-primary text-on-primary">
+          <h2 class="text-4xl font-extrabold mb-8">Ready to simplify your business IT?</h2>
+          <p class="text-on-primary-container text-lg mb-12 leading-relaxed">Let's talk about how I can take the tech stress off your plate so you can focus on growing your business.</p>
+          <div class="space-y-8">
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-on-primary-container">alternate_email</span>
+              <div>
+                <div class="font-bold">Email Me</div>
+                <div class="text-on-primary-container">zach@phlextechnologies.com</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-on-primary-container">phone_in_talk</span>
+              <div>
+                <div class="font-bold">Call or Text</div>
+                <div class="text-on-primary-container">+1 (302) 373-1590</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-on-primary-container">location_on</span>
+              <div>
+                <div class="font-bold">Serving Local Businesses</div>
+                <div class="text-on-primary-container">In-person and remote support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 p-12 lg:p-20">
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold text-on-surface mb-2">First Name</label>
+                <input class="w-full px-4 py-3 bg-surface-container-high border-none rounded-sm focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="John" type="text" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-on-surface mb-2">Last Name</label>
+                <input class="w-full px-4 py-3 bg-surface-container-high border-none rounded-sm focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Doe" type="text" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">Your Email</label>
+              <input class="w-full px-4 py-3 bg-surface-container-high border-none rounded-sm focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="john@company.com" type="email" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">How can I help?</label>
+              <select class="w-full px-4 py-3 bg-surface-container-high border-none rounded-sm focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
+                <option>Remote IT Support</option>
+                <option>Professional Email Setup</option>
+                <option>Custom Software Need</option>
+                <option>General Consultation</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-on-surface mb-2">Message</label>
+              <textarea class="w-full px-4 py-3 bg-surface-container-high border-none rounded-sm focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Tell me about what's on your mind..." rows="4"></textarea>
+            </div>
+            <button class="w-full bg-primary text-on-primary py-4 rounded-md font-bold text-lg hover:bg-primary-container transition-all" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-50 border-t border-outline-variant/15">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 py-12 px-8">
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <div class="text-lg font-black text-blue-900">Phlex Technologies</div>
+        <p class="text-sm text-slate-500">© 2026 Phlex Technologies. Reliable IT support for local businesses.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a class="text-sm text-slate-500 hover:text-blue-700 underline-offset-4 hover:underline transition-opacity" href="#">Privacy</a>
+        <a class="text-sm text-slate-500 hover:text-blue-700 underline-offset-4 hover:underline transition-opacity" href="#">Terms</a>
+        <a class="text-sm text-slate-500 hover:text-blue-700 underline-offset-4 hover:underline transition-opacity" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
